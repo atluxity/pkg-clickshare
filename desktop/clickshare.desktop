@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=ClickShare
+Comment=The ClickShare client for linux devices
+Icon=/usr/share/barco/clickshare.ico
+Exec=clickshare
+Categories=Utility;
