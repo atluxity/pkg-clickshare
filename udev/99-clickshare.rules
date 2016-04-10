@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ATTR{idVendor}=="0600", ATTR{idProduct}=="0070", MODE="0660", GROUP="plugdev"
+SUBSYSTEM=="hidraw" , ATTRS{idVendor}=="0600", ATTRS{idProduct}=="0070", MODE="0660", GROUP="plugdev", SYMLINK="clickshare"
