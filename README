@@ -1,0 +1,18 @@
+https://bugs.debian.org/820587
+
+Package: wnpp
+Severity: wishlist
+
+* Package name    : clickshare
+  Version         : v01.07.79
+  Upstream Author : BarCo
+* URL             : http://www.barco.com/en/mybarco/mysupport/productsupport/software/?productid=b21eda55-0837-4478-87f6-68d51b71e405
+* License         : Proprietary
+  Programming Lang: unknown
+  Description     : Linux driver for ClickShare screen share system
+
+We are considering to upload a non-free package with the ClickShare
+driver for Linux into Debian.  The driver consist of two binary user
+space programs and a udev rule to launch it when the dongle is inserted.
+Based on the dependency list, we suspect it is sending snapshots of the
+screen as a video stream to the TV or projector.
