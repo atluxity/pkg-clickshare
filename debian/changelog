@@ -1,0 +1,5 @@
+clickshare (0.1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #699077).
+
+ -- Petter Reinholdtsen <pere@debian.org>  Wed, 23 Jan 2013 12:25:31 +0100

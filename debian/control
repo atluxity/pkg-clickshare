@@ -1,0 +1,15 @@
+Source: clickshare
+Section: misc
+Priority: optional
+Maintainer: Hans-Petter Fjeld <atluxity@1kb.no>
+Uploaders: Petter Reinholdtsen <pere@debian.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.7
+Vcs-Browser: https://github.com/atluxity/pkg-clickshare
+Vcs-Git: https://github.com/atluxity/pkg-clickshare.git
+
+Package: clickshare
+Architecture: i386 amd64
+Depends: ${misc:Depends}
+Description:
+
