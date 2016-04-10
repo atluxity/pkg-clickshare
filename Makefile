@@ -8,6 +8,8 @@ barco = $(prefix)/share/barco
 applications = $(prefix)/share/applications
 autostart = /etc/xdg/autostart
 
+arch = $(shell dpkg --print-architecture)
+
 INSTALL = install -m755
 INSTALL_DATA = install -m644
 
@@ -16,7 +18,7 @@ all:
 install:
 	mkdir -p $(DESTDIR)$(bindir) $(DESTDIR)$(docdir)
 	$(INSTALL_DATA) README clickshare-eula $(DESTDIR)$(docdir)
-	$(INSTALL) bin/clickshare-launcher bin/clickshare $(DESTDIR)$(bindir)
+	$(INSTALL) bin-$(arch)/clickshare-launcher bin-$(arch)/clickshare $(DESTDIR)$(bindir)
 	mkdir -p $(DESTDIR)$(udevdir)
 	$(INSTALL_DATA) udev/99-clickshare.rules $(DESTDIR)$(udevdir)
 	mkdir -p $(DESTDIR)$(barco)
