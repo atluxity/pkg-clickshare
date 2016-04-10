@@ -5,7 +5,7 @@ sysconfdir = /etc
 docdir = $(prefix)/share/doc/clickshare
 udevdir = /lib/udev/rules.d
 
-arch = $(dpkg --print-architecture)
+arch = $(shell dpkg --print-architecture)
 
 INSTALL = install -m755
 INSTALL_DATA = install -m644
